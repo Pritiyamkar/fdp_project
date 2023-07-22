@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Save The World | Landing Page Design</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo">World</a>
+            <div class="toggle"></div>
+        </header>
+        <img src="bg.jpg" class="bg">
+        <img src="bird.png" class="bird">
+        <div class="content">
+            <h2>We can save The<br><span>Earth</span></h2>
+            <p>Saving the Earth is not a distant dream; it's a reality we can create together. 
+                By acknowledging our responsibility to safeguard the planet, implementing sustainable practices,
+                embracing clean energy, and preserving natural ecosystems, we can make a lasting impact. Every 
+                individual's actions, no matter how small, can contribute to the greater cause of saving our 
+                precious home. Let us unite our efforts and leave a legacy of hope and resilience for future 
+                generations to cherish. The time to act is now.</p>
+            <a href="#">Join Us</a>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+            <li><a href="#"><img src="instagram.png"></a></li>
+        </ul>
+        <div class="textBlocks">
+            <div class="block">
+                <h3>Defenders of Earth</h3>
+                <p>We possess the power to save the Earth. By adopting sustainable practices, conserving 
+                    resources, and protecting natural habitats, we can ensure a thriving planet for generations 
+                    to come. Let's act now!</p>
+            </div>
+            <div class="block">
+                <h3>How to save Water</h3>
+                <p>Save water by fixing leaks, using water-saving appliances, collecting rainwater, and turning
+                     off taps. Water plants wisely, sweep instead of using a hose, and raise awareness for a 
+                     sustainable future</p>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        document.addEventListener("mousemove",function(e){
+            const bg = document.querySelector('.bg');
+            const bird = document.querySelector('.bird');
+            const content = document.querySelector('.content');
+
+            bg.style.width = 100 + e.pageX/100 + '%';
+            bg.style.height = 100 + e.pageX/100 + '%';
+
+            bird.style.right = 100 + e.pageX/2 + 'px';
+
+            content.style.left = 100 + e.pageX/2.5 + 'px';
+
+        })
+
+    </script>
+</body>
+</html>
